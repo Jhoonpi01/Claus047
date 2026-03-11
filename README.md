@@ -20,7 +20,7 @@ proyecto_adopcion_digital/
 │   ├── 02_modelo_clasificacion.py        ← Modelos ML
 │   └── 03_ia_generativa_gemini.py        ← IA Generativa
 ├── sql/
-│   └── 01_bigquery_ml_modelo_adopcion.sql ← Modelo en SQL puro
+│   └── 01_bigquery_ml_modelo_adopcion.sql ← Modelo completo en SQL (BigQuery ML)
 ├── powerbi/
 │   ├── guia_conexion_powerbi.py          ← Guía + DAX + layout
 │   ├── coeficientes_modelo.csv           ← Datos para dashboard
@@ -29,6 +29,8 @@ proyecto_adopcion_digital/
 │   └── resumen_segmentos.csv
 ├── prompts/
 │   └── toolkit_prompts_claudia.md        ← 25+ plantillas de prompts
+├── docs/
+│   └── modelos_detalle.md                ← Detalle y justificación de cada modelo
 ├── data/
 │   ├── dataset_adopcion_digital.csv      ← Dataset consolidado
 │   ├── scoring_clientes.csv              ← Score por cliente
@@ -150,6 +152,16 @@ Cambiar la fuente de CSV a conexión directa a BigQuery.
 | Vertex AI / Gemini | IA generativa | Pay-per-use |
 | Power BI Desktop | Dashboards | Ya disponible |
 | scikit-learn | ML en Python | Gratis (open source) |
+
+---
+
+## Documentación Adicional
+
+| Documento | Contenido |
+|---|---|
+| [docs/modelos_detalle.md](docs/modelos_detalle.md) | Detalle de cada modelo ML, justificación, métricas esperadas y consideraciones para datos reales |
+| [prompts/toolkit_prompts_claudia.md](prompts/toolkit_prompts_claudia.md) | 25+ plantillas de prompts para el día a día |
+| [powerbi/guia_conexion_powerbi.py](powerbi/guia_conexion_powerbi.py) | Guía de conexión + medidas DAX + layout del dashboard |
 
 ---
 
